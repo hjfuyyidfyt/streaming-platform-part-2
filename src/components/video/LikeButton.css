@@ -1,0 +1,49 @@
+.like-button-group {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.like-btn,
+.dislike-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.like-btn:hover,
+.dislike-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.like-btn.active {
+    color: #6366f1;
+}
+
+.like-btn.active svg {
+    fill: #6366f1;
+}
+
+.dislike-btn.active {
+    color: #ef4444;
+}
+
+.dislike-btn.active svg {
+    fill: #ef4444;
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.2);
+}

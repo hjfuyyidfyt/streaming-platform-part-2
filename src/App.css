@@ -1,0 +1,7 @@
+/* App.css — Clean global utilities only */
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

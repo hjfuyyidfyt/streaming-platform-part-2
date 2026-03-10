@@ -1,0 +1,200 @@
+﻿2026-03-01 06:12:31,257 - backend.services.telegram_uploader - INFO - [TelegramUploader] Telethon client connected successfully!
+2026-03-01 06:12:31,307 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:12:31,328 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:12:31,393 - backend.services.telegram_uploader - INFO - [TelegramUploader] Channel entity resolved: Vplyer storage
+2026-03-01 06:12:31,393 - backend.services.telegram_uploader - INFO - [TelegramUploader] Channel entity resolved: Vplyer storage
+2026-03-01 06:12:31,441 - backend.services.telegram_uploader - INFO - Uploading video backend/temp_tg_uploads\5140147f-f5c5-42e6-bfb5-56b8ee3db6cf_orig_e40a32e2-eb08-4f2b-a978-196e9b448c00.mp4 (6.5 MB) to Telegram channel (Encrypted: False)...
+2026-03-01 06:12:31,441 - backend.services.telegram_uploader - INFO - Uploading video backend/temp_tg_uploads\5140147f-f5c5-42e6-bfb5-56b8ee3db6cf_orig_e40a32e2-eb08-4f2b-a978-196e9b448c00.mp4 (6.5 MB) to Telegram channel (Encrypted: False)...
+2026-03-01 06:12:31,486 - telethon.client.uploads - INFO - Uploading file of 6780191 bytes in 13 chunks of 524288
+2026-03-01 06:12:49,027 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:12:49,044 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:12:49,101 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:12:49,108 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:12:49,156 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:12:49,166 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:12:49,212 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:12:49,222 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:12:49,269 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:12:49,276 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:12:49,326 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:12:49,336 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:12:49,381 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:12:49,393 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:12:49,501 - backend.services.telegram_uploader - INFO -   Upload progress: 7% (0.5 / 6.5 MB)
+2026-03-01 06:12:49,501 - backend.services.telegram_uploader - INFO -   Upload progress: 7% (0.5 / 6.5 MB)
+2026-03-01 06:12:50,644 - backend.services.transcoder - INFO - Successfully created 480p (5.4 MB)
+2026-03-01 06:12:50,698 - backend.services.transcoder - INFO - Transcoding to 240p...
+2026-03-01 06:12:50,762 - backend.services.transcoder - INFO - Running FFmpeg for 240p...
+2026-03-01 06:12:59,896 - backend.services.transcoder - INFO - Successfully created 240p (2.1 MB)
+2026-03-01 06:12:59,963 - backend.routers.upload - INFO - [BG-70] Transcoding SUCCESS! Created: ['480p', '240p']
+2026-03-01 06:12:59,963 - backend.routers.upload - INFO - [BG-70] Transcoding SUCCESS! Created: ['480p', '240p']
+2026-03-01 06:13:03,132 - backend.services.external_storage - INFO - DoodStream Upload Start: Key Loaded? True
+2026-03-01 06:13:03,132 - backend.services.external_storage - INFO - DoodStream Upload Start: Key Loaded? True
+2026-03-01 06:13:05,917 - httpx - INFO - HTTP Request: GET https://api.streamtape.com/file/ul?login=a1c83710d8a130cf3f56&key=0WLLplbp88hbowk "HTTP/1.1 200 OK"
+2026-03-01 06:13:05,987 - backend.services.telegram_uploader - INFO -   Upload progress: 23% (1.5 / 6.5 MB)
+2026-03-01 06:13:05,987 - backend.services.telegram_uploader - INFO -   Upload progress: 23% (1.5 / 6.5 MB)
+2026-03-01 06:13:06,447 - httpx - INFO - HTTP Request: GET https://doodapi.co/api/upload/server?key=555566t4oe189vn1vj0iwv "HTTP/1.1 200 OK"
+2026-03-01 06:13:13,434 - backend.services.telegram_uploader - INFO -   Upload progress: 38% (2.5 / 6.5 MB)
+2026-03-01 06:13:13,434 - backend.services.telegram_uploader - INFO -   Upload progress: 38% (2.5 / 6.5 MB)
+2026-03-01 06:13:17,632 - httpx - INFO - HTTP Request: POST https://2453340445.tapecontent.net/xfsproupload/4Ofqm7aQp5SJ77Rz "HTTP/1.1 200 OK"
+2026-03-01 06:13:19,413 - backend.routers.upload - INFO - [BG-70] Source saved: streamtape - 480p
+2026-03-01 06:13:19,413 - backend.routers.upload - INFO - [BG-70] Source saved: streamtape - 480p
+2026-03-01 06:13:20,528 - backend.services.telegram_uploader - INFO -   Upload progress: 54% (3.5 / 6.5 MB)
+2026-03-01 06:13:20,528 - backend.services.telegram_uploader - INFO -   Upload progress: 54% (3.5 / 6.5 MB)
+2026-03-01 06:13:27,555 - backend.services.telegram_uploader - INFO -   Upload progress: 69% (4.5 / 6.5 MB)
+2026-03-01 06:13:27,555 - backend.services.telegram_uploader - INFO -   Upload progress: 69% (4.5 / 6.5 MB)
+2026-03-01 06:13:35,259 - backend.services.telegram_uploader - INFO -   Upload progress: 85% (5.5 / 6.5 MB)
+2026-03-01 06:13:35,259 - backend.services.telegram_uploader - INFO -   Upload progress: 85% (5.5 / 6.5 MB)
+2026-03-01 06:13:39,082 - httpx - INFO - HTTP Request: POST https://odsxj1144rta.cloudatacdn.com/upload/01 "HTTP/1.1 200 OK"
+2026-03-01 06:13:40,680 - backend.routers.upload - INFO - [BG-70] Source saved: doodstream - 480p
+2026-03-01 06:13:40,680 - backend.routers.upload - INFO - [BG-70] Source saved: doodstream - 480p
+2026-03-01 06:13:41,238 - backend.services.telegram_queue - INFO - [TelegramQueue] Enqueued via threadsafe put: video_id=70, res=480p, queue_size=0
+2026-03-01 06:13:42,146 - backend.services.telegram_uploader - INFO -   Upload progress: 100% (6.5 / 6.5 MB)
+2026-03-01 06:13:42,146 - backend.services.telegram_uploader - INFO -   Upload progress: 100% (6.5 / 6.5 MB)
+2026-03-01 06:13:42,284 - backend.services.transcoder - INFO - Detected video: 640x640 -> 720p
+2026-03-01 06:13:42,287 - telethon.client.uploads - INFO - Uploading file of 49016 bytes in 1 chunks of 131072
+2026-03-01 06:13:43,262 - backend.services.external_storage - INFO - DoodStream Upload Start: Key Loaded? True
+2026-03-01 06:13:43,262 - backend.services.external_storage - INFO - DoodStream Upload Start: Key Loaded? True
+2026-03-01 06:13:43,572 - backend.services.telegram_uploader - INFO - Upload successful! Message ID: 46, File size: 6780191
+2026-03-01 06:13:43,572 - backend.services.telegram_uploader - INFO - Upload successful! Message ID: 46, File size: 6780191
+2026-03-01 06:13:44,010 - backend.services.telegram_queue - INFO - [TelegramQueue] SUCCESS: video_id=70, res=720p, msg_id=46
+2026-03-01 06:13:44,014 - backend.services.telegram_queue - INFO - [TelegramQueue] Cleaned up: backend/temp_tg_uploads\5140147f-f5c5-42e6-bfb5-56b8ee3db6cf_orig_e40a32e2-eb08-4f2b-a978-196e9b448c00.mp4
+2026-03-01 06:13:45,041 - httpx - INFO - HTTP Request: GET https://doodapi.co/api/upload/server?key=555566t4oe189vn1vj0iwv "HTTP/1.1 200 OK"
+2026-03-01 06:13:45,060 - httpx - INFO - HTTP Request: GET https://api.streamtape.com/file/ul?login=a1c83710d8a130cf3f56&key=0WLLplbp88hbowk "HTTP/1.1 200 OK"
+2026-03-01 06:13:46,029 - backend.services.telegram_queue - INFO - [TelegramQueue] Processing: video_id=70, res=480p, file=backend/temp_tg_uploads\c597b76a-8675-4259-b499-6284e65fcfe3_480p_e40a32e2-eb08-4f2b-a978-196e9b448c00_480p.mp4
+2026-03-01 06:13:46,029 - backend.services.telegram_uploader - INFO - [TelegramUploader] Credentials: TOKEN=Yes, API_ID=Yes, API_HASH=Yes, CHANNEL_ID=-1003799706902
+2026-03-01 06:13:46,029 - backend.services.telegram_uploader - INFO - [TelegramUploader] Credentials: TOKEN=Yes, API_ID=Yes, API_HASH=Yes, CHANNEL_ID=-1003799706902
+2026-03-01 06:13:46,031 - backend.services.telegram_uploader - INFO - Uploading video backend/temp_tg_uploads\c597b76a-8675-4259-b499-6284e65fcfe3_480p_e40a32e2-eb08-4f2b-a978-196e9b448c00_480p.mp4 (5.4 MB) to Telegram channel (Encrypted: False)...
+2026-03-01 06:13:46,031 - backend.services.telegram_uploader - INFO - Uploading video backend/temp_tg_uploads\c597b76a-8675-4259-b499-6284e65fcfe3_480p_e40a32e2-eb08-4f2b-a978-196e9b448c00_480p.mp4 (5.4 MB) to Telegram channel (Encrypted: False)...
+2026-03-01 06:13:46,032 - telethon.client.uploads - INFO - Uploading file of 5686292 bytes in 11 chunks of 524288
+2026-03-01 06:13:49,575 - httpx - INFO - HTTP Request: POST https://872371488.tapecontent.net/xfsproupload/DG968cnus4DGp6D1 "HTTP/1.1 200 OK"
+2026-03-01 06:13:50,155 - backend.routers.upload - INFO - [BG-70] Source saved: streamtape - 240p
+2026-03-01 06:13:50,155 - backend.routers.upload - INFO - [BG-70] Source saved: streamtape - 240p
+2026-03-01 06:13:50,257 - backend.services.telegram_uploader - INFO -   Upload progress: 9% (0.5 / 5.4 MB)
+2026-03-01 06:13:50,257 - backend.services.telegram_uploader - INFO -   Upload progress: 9% (0.5 / 5.4 MB)
+2026-03-01 06:13:51,916 - httpx - INFO - HTTP Request: POST https://io1134gt.cloudatacdn.com/upload/01 "HTTP/1.1 200 OK"
+2026-03-01 06:13:53,420 - backend.routers.upload - INFO - [BG-70] Source saved: doodstream - 240p
+2026-03-01 06:13:53,420 - backend.routers.upload - INFO - [BG-70] Source saved: doodstream - 240p
+2026-03-01 06:13:53,712 - backend.services.telegram_queue - INFO - [TelegramQueue] Enqueued via threadsafe put: video_id=70, res=240p, queue_size=0
+2026-03-01 06:13:53,719 - backend.routers.upload - INFO - [BG-70] All fast tasks complete! Telegram queue: 1 pending
+2026-03-01 06:13:53,719 - backend.routers.upload - INFO - [BG-70] All fast tasks complete! Telegram queue: 1 pending
+2026-03-01 06:13:58,305 - backend.services.telegram_uploader - INFO -   Upload progress: 27% (1.5 / 5.4 MB)
+2026-03-01 06:13:58,305 - backend.services.telegram_uploader - INFO -   Upload progress: 27% (1.5 / 5.4 MB)
+2026-03-01 06:14:05,120 - backend.services.telegram_uploader - INFO -   Upload progress: 46% (2.5 / 5.4 MB)
+2026-03-01 06:14:05,120 - backend.services.telegram_uploader - INFO -   Upload progress: 46% (2.5 / 5.4 MB)
+2026-03-01 06:14:12,040 - backend.services.telegram_uploader - INFO -   Upload progress: 64% (3.5 / 5.4 MB)
+2026-03-01 06:14:12,040 - backend.services.telegram_uploader - INFO -   Upload progress: 64% (3.5 / 5.4 MB)
+2026-03-01 06:14:18,892 - backend.services.telegram_uploader - INFO -   Upload progress: 82% (4.5 / 5.4 MB)
+2026-03-01 06:14:18,892 - backend.services.telegram_uploader - INFO -   Upload progress: 82% (4.5 / 5.4 MB)
+2026-03-01 06:14:22,219 - backend.services.telegram_uploader - INFO -   Upload progress: 92% (5.0 / 5.4 MB)
+2026-03-01 06:14:22,219 - backend.services.telegram_uploader - INFO -   Upload progress: 92% (5.0 / 5.4 MB)
+2026-03-01 06:14:25,110 - backend.services.transcoder - INFO - Detected video: 480x480 -> 480p
+2026-03-01 06:14:25,112 - telethon.client.uploads - INFO - Uploading file of 49016 bytes in 1 chunks of 131072
+2026-03-01 06:14:25,849 - backend.services.telegram_uploader - INFO - Upload successful! Message ID: 47, File size: 5686292
+2026-03-01 06:14:25,849 - backend.services.telegram_uploader - INFO - Upload successful! Message ID: 47, File size: 5686292
+2026-03-01 06:14:26,192 - backend.services.telegram_queue - INFO - [TelegramQueue] SUCCESS: video_id=70, res=480p, msg_id=47
+2026-03-01 06:14:26,194 - backend.services.telegram_queue - INFO - [TelegramQueue] Cleaned up: backend/temp_tg_uploads\c597b76a-8675-4259-b499-6284e65fcfe3_480p_e40a32e2-eb08-4f2b-a978-196e9b448c00_480p.mp4
+2026-03-01 06:14:28,196 - backend.services.telegram_queue - INFO - [TelegramQueue] Processing: video_id=70, res=240p, file=backend/temp_tg_uploads\890e7701-54cf-4a25-acb2-a1946fcd819b_240p_e40a32e2-eb08-4f2b-a978-196e9b448c00_240p.mp4
+2026-03-01 06:14:28,197 - backend.services.telegram_uploader - INFO - [TelegramUploader] Credentials: TOKEN=Yes, API_ID=Yes, API_HASH=Yes, CHANNEL_ID=-1003799706902
+2026-03-01 06:14:28,197 - backend.services.telegram_uploader - INFO - [TelegramUploader] Credentials: TOKEN=Yes, API_ID=Yes, API_HASH=Yes, CHANNEL_ID=-1003799706902
+2026-03-01 06:14:28,198 - backend.services.telegram_uploader - INFO - Uploading video backend/temp_tg_uploads\890e7701-54cf-4a25-acb2-a1946fcd819b_240p_e40a32e2-eb08-4f2b-a978-196e9b448c00_240p.mp4 (2.1 MB) to Telegram channel (Encrypted: False)...
+2026-03-01 06:14:28,198 - backend.services.telegram_uploader - INFO - Uploading video backend/temp_tg_uploads\890e7701-54cf-4a25-acb2-a1946fcd819b_240p_e40a32e2-eb08-4f2b-a978-196e9b448c00_240p.mp4 (2.1 MB) to Telegram channel (Encrypted: False)...
+2026-03-01 06:14:28,200 - telethon.client.uploads - INFO - Uploading file of 2244697 bytes in 5 chunks of 524288
+2026-03-01 06:14:31,291 - backend.services.telegram_uploader - INFO -   Upload progress: 23% (0.5 / 2.1 MB)
+2026-03-01 06:14:31,291 - backend.services.telegram_uploader - INFO -   Upload progress: 23% (0.5 / 2.1 MB)
+2026-03-01 06:14:35,273 - backend.services.telegram_uploader - INFO -   Upload progress: 46% (1.0 / 2.1 MB)
+2026-03-01 06:14:35,273 - backend.services.telegram_uploader - INFO -   Upload progress: 46% (1.0 / 2.1 MB)
+2026-03-01 06:14:38,507 - backend.services.telegram_uploader - INFO -   Upload progress: 70% (1.5 / 2.1 MB)
+2026-03-01 06:14:38,507 - backend.services.telegram_uploader - INFO -   Upload progress: 70% (1.5 / 2.1 MB)
+2026-03-01 06:14:41,920 - backend.services.telegram_uploader - INFO -   Upload progress: 93% (2.0 / 2.1 MB)
+2026-03-01 06:14:41,920 - backend.services.telegram_uploader - INFO -   Upload progress: 93% (2.0 / 2.1 MB)
+2026-03-01 06:14:43,014 - backend.services.transcoder - INFO - Detected video: 240x240 -> 240p
+2026-03-01 06:14:43,015 - telethon.client.uploads - INFO - Uploading file of 49016 bytes in 1 chunks of 131072
+2026-03-01 06:14:43,721 - backend.services.telegram_uploader - INFO - Upload successful! Message ID: 48, File size: 2244697
+2026-03-01 06:14:43,721 - backend.services.telegram_uploader - INFO - Upload successful! Message ID: 48, File size: 2244697
+2026-03-01 06:14:44,104 - backend.services.telegram_queue - INFO - [TelegramQueue] SUCCESS: video_id=70, res=240p, msg_id=48
+2026-03-01 06:14:44,106 - backend.services.telegram_queue - INFO - [TelegramQueue] Cleaned up: backend/temp_tg_uploads\890e7701-54cf-4a25-acb2-a1946fcd819b_240p_e40a32e2-eb08-4f2b-a978-196e9b448c00_240p.mp4
+2026-03-01 06:15:50,799 - backend.main - INFO - REQUEST: GET /videos/ from 127.0.0.1
+2026-03-01 06:15:51,231 - backend.main - INFO - RESPONSE: GET /videos/ -> 200
+2026-03-01 06:15:51,444 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:15:51,478 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:15:51,516 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:15:51,526 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:15:51,754 - backend.main - INFO - REQUEST: GET /thumbnails/64 from 127.0.0.1
+2026-03-01 06:15:52,058 - backend.main - INFO - RESPONSE: GET /thumbnails/64 -> 200
+2026-03-01 06:15:53,444 - backend.main - INFO - REQUEST: GET /videos/70 from 127.0.0.1
+2026-03-01 06:15:53,450 - backend.main - INFO - REQUEST: GET /videos/categories/all from 127.0.0.1
+2026-03-01 06:15:53,752 - backend.main - INFO - RESPONSE: GET /videos/70 -> 200
+2026-03-01 06:15:53,755 - backend.main - INFO - RESPONSE: GET /videos/categories/all -> 200
+2026-03-01 06:15:53,761 - backend.main - INFO - REQUEST: GET /videos/70 from 127.0.0.1
+2026-03-01 06:15:53,768 - backend.main - INFO - REQUEST: GET /videos/categories/all from 127.0.0.1
+2026-03-01 06:15:54,063 - backend.main - INFO - RESPONSE: GET /videos/70 -> 200
+2026-03-01 06:15:54,070 - backend.main - INFO - RESPONSE: GET /videos/categories/all -> 200
+2026-03-01 06:15:54,073 - backend.main - INFO - REQUEST: GET /videos/ from 127.0.0.1
+2026-03-01 06:15:54,085 - backend.main - INFO - RESPONSE: GET /videos/ -> 200
+2026-03-01 06:15:54,090 - backend.main - INFO - REQUEST: GET /videos/ from 127.0.0.1
+2026-03-01 06:15:54,094 - backend.main - INFO - RESPONSE: GET /videos/ -> 200
+2026-03-01 06:15:54,095 - backend.main - INFO - REQUEST: OPTIONS /videos/70/view from 127.0.0.1
+2026-03-01 06:15:54,099 - backend.main - INFO - RESPONSE: OPTIONS /videos/70/view -> 200
+2026-03-01 06:15:54,105 - backend.main - INFO - REQUEST: OPTIONS /videos/70/view from 127.0.0.1
+2026-03-01 06:15:54,107 - backend.main - INFO - REQUEST: POST /videos/70/view from 127.0.0.1
+2026-03-01 06:15:54,107 - backend.main - INFO - RESPONSE: OPTIONS /videos/70/view -> 200
+2026-03-01 06:15:54,639 - backend.main - INFO - RESPONSE: POST /videos/70/view -> 200
+2026-03-01 06:15:54,640 - backend.main - INFO - REQUEST: POST /videos/70/view from 127.0.0.1
+2026-03-01 06:15:55,175 - backend.main - INFO - RESPONSE: POST /videos/70/view -> 200
+2026-03-01 06:15:55,177 - backend.main - INFO - REQUEST: GET /comments/video/70 from 127.0.0.1
+2026-03-01 06:15:55,178 - backend.main - INFO - REQUEST: OPTIONS /likes/video/70/status from 127.0.0.1
+2026-03-01 06:15:55,178 - backend.main - INFO - REQUEST: OPTIONS /likes/video/70/status from 127.0.0.1
+2026-03-01 06:15:55,179 - backend.main - INFO - REQUEST: GET /stream/70 from 127.0.0.1
+2026-03-01 06:15:55,180 - backend.main - INFO - REQUEST: GET /subscriptions/channel/1/count from 127.0.0.1
+2026-03-01 06:15:55,205 - backend.main - INFO - RESPONSE: OPTIONS /likes/video/70/status -> 200
+2026-03-01 06:15:55,207 - backend.main - INFO - RESPONSE: OPTIONS /likes/video/70/status -> 200
+2026-03-01 06:15:55,209 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:15:55,825 - telethon.network.mtprotosender - INFO - Connecting to 91.108.56.199:443/TcpFull...
+2026-03-01 06:15:56,013 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:15:56,017 - backend.main - INFO - RESPONSE: GET /comments/video/70 -> 200
+2026-03-01 06:15:56,024 - backend.main - INFO - RESPONSE: GET /subscriptions/channel/1/count -> 200
+2026-03-01 06:15:56,027 - backend.main - INFO - REQUEST: GET /likes/video/70/status from 127.0.0.1
+2026-03-01 06:15:56,035 - telethon.network.mtprotosender - INFO - Connection to 91.108.56.199:443/TcpFull complete!
+2026-03-01 06:15:56,079 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:15:56,091 - backend.main - INFO - REQUEST: GET /comments/video/70 from 127.0.0.1
+2026-03-01 06:15:56,840 - backend.main - INFO - REQUEST: GET /subscriptions/channel/1/count from 127.0.0.1
+2026-03-01 06:15:56,841 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:15:56,842 - backend.main - INFO - RESPONSE: GET /likes/video/70/status -> 200
+2026-03-01 06:15:57,335 - backend.main - INFO - RESPONSE: GET /comments/video/70 -> 200
+2026-03-01 06:15:57,344 - backend.main - INFO - RESPONSE: GET /subscriptions/channel/1/count -> 200
+2026-03-01 06:15:57,353 - backend.main - INFO - REQUEST: GET /likes/video/70/status from 127.0.0.1
+2026-03-01 06:15:57,857 - backend.main - INFO - RESPONSE: GET /likes/video/70/status -> 200
+2026-03-01 06:15:58,259 - backend.routers.stream - INFO - [Stream] Telethon client connected for streaming
+2026-03-01 06:15:58,420 - telethon.client.downloads - INFO - Starting indirect file download in chunks of 524288 at 0, stride 65536
+2026-03-01 06:15:58,425 - backend.main - INFO - RESPONSE: GET /stream/70 -> 200
+2026-03-01 06:16:11,289 - backend.main - INFO - REQUEST: GET /stream/70 from 127.0.0.1
+2026-03-01 06:16:17,591 - telethon.client.downloads - INFO - Starting indirect file download in chunks of 524288 at 0, stride 65536
+2026-03-01 06:16:17,593 - backend.main - INFO - RESPONSE: GET /stream/70 -> 200
+2026-03-01 06:16:50,671 - backend.main - INFO - REQUEST: OPTIONS /history/ from 127.0.0.1
+2026-03-01 06:16:50,672 - backend.main - INFO - RESPONSE: OPTIONS /history/ -> 200
+2026-03-01 06:16:50,676 - backend.main - INFO - REQUEST: POST /history/ from 127.0.0.1
+2026-03-01 06:17:00,757 - backend.main - INFO - RESPONSE: POST /history/ -> 422
+2026-03-01 06:17:57,301 - backend.main - INFO - REQUEST: GET /videos/ from 127.0.0.1
+2026-03-01 06:17:57,301 - backend.main - INFO - REQUEST: GET /videos/categories/all from 127.0.0.1
+2026-03-01 06:17:58,067 - backend.services.cache - INFO - Cache SET: videos_skip_0_limit_12 (ttl: 300s)
+2026-03-01 06:17:58,070 - backend.main - INFO - RESPONSE: GET /videos/ -> 200
+2026-03-01 06:17:58,071 - backend.main - INFO - RESPONSE: GET /videos/categories/all -> 200
+2026-03-01 06:18:02,464 - backend.main - INFO - REQUEST: GET /videos/categories/all from 127.0.0.1
+2026-03-01 06:18:02,466 - backend.main - INFO - REQUEST: GET /history/continue from 127.0.0.1
+2026-03-01 06:18:02,469 - backend.main - INFO - RESPONSE: GET /videos/categories/all -> 200
+2026-03-01 06:18:02,703 - backend.main - INFO - RESPONSE: GET /history/continue -> 200
+2026-03-01 06:18:02,837 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:18:02,840 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:18:02,845 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:18:02,848 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:18:02,852 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:18:02,855 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:18:02,859 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:18:02,862 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:18:02,870 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:18:02,872 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:18:02,877 - backend.main - INFO - REQUEST: GET /admin/ad-settings from 127.0.0.1
+2026-03-01 06:18:02,879 - backend.main - INFO - RESPONSE: GET /admin/ad-settings -> 200
+2026-03-01 06:18:03,103 - backend.main - INFO - REQUEST: GET /thumbnails/70.jpg from 127.0.0.1
+2026-03-01 06:18:03,106 - backend.main - INFO - RESPONSE: GET /thumbnails/70.jpg -> 200
