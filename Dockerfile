@@ -1,50 +1,40 @@
-# Multi-stage Dockerfile for vPlyer
+# Stage 1: Build the React application
+FROM node:22-alpine AS builder
 
-# --- Stage 1: Build Frontend ---
-FROM node:22-alpine AS frontend-build
-WORKDIR /build
-
-# Copy package files first for better caching
-COPY package*.json ./
-RUN npm install
-
-# Copy all source files and build
-COPY index.html ./
-COPY vite.config.js ./
-COPY postcss.config.cjs ./
-COPY tailwind.config.js ./
-COPY src/ ./src/
-COPY public/ ./public/
-RUN npm run build
-
-# --- Stage 2: Backend & Runtime ---
-FROM python:3.9-slim
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    ffmpeg \
-    libmagic1 \
-    && rm -rf /var/lib/apt/lists/*
+# Copy package files
+COPY package*.json ./
 
-# Install python dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Install dependencies
+RUN npm install
 
-# Copy backend code
-COPY backend/ ./backend/
+# Copy all files
+COPY . .
 
-# Copy frontend build results
-COPY --from=frontend-build /build/dist/ ./dist/
+# Pass the VITE_API_BASE_URL to the build environment
+ARG VITE_API_BASE_URL
+ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 
-# Create necessary directories
-RUN mkdir -p backend/temp_uploads backend/temp_transcodes backend/thumbnails
+# Build the frontend (Vite will bake the API URL into the static files)
+RUN npm run build
 
-# Environment variables
-ENV PORT=8000
-ENV HOST=0.0.0.0
+# Stage 2: Serve the app with Nginx
+FROM nginx:alpine
 
-EXPOSE 8000
+# Copy the build output from the builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Start application
-CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Add a default nginx config for Single Page Application routing
+RUN echo 'server { \
+    listen 80; \
+    location / { \
+        root   /usr/share/nginx/html; \
+        index  index.html index.htm; \
+        try_files $uri $uri/ /index.html; \
+    } \
+}' > /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
