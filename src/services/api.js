@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+export const API_URL = (window.env && window.env.VITE_API_BASE_URL) || import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 // Helper to get auth headers
 const getAuthHeaders = (token) => {
