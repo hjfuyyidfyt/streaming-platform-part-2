@@ -1,5 +1,23 @@
 import axios from 'axios';
-export const API_URL = (window.env && window.env.VITE_API_BASE_URL) || import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+let rawUrl = (window.env && window.env.VITE_API_BASE_URL) || import.meta.env.VITE_API_BASE_URL;
+
+if (!rawUrl || rawUrl.trim() === '' || rawUrl === 'undefined' || rawUrl === '/') {
+    // Default to known production backend if deployed, else localhost
+    rawUrl = window.location.hostname.includes('railway') 
+        ? 'https://vplayer1.up.railway.app' 
+        : 'http://localhost:8000';
+}
+
+rawUrl = rawUrl.trim();
+// Force absolute URL protocol if user just typed the domain (e.g. "vplayer1.up.railway.app")
+if (!rawUrl.startsWith('http://') && !rawUrl.startsWith('https://')) {
+    rawUrl = 'https://' + rawUrl;
+}
+// Remove trailing slash to prevent double-slash in endpoints
+rawUrl = rawUrl.replace(/\/$/, '');
+
+console.log("[vPlyer Backend Connection] Connecting to:", rawUrl);
+export const API_URL = rawUrl;
 
 // Helper to get auth headers
 const getAuthHeaders = (token) => {
