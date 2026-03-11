@@ -25,16 +25,17 @@ FROM nginx:alpine
 # Copy the build output from the builder stage
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Add a default nginx config for Single Page Application routing
-RUN echo 'server { \
-    listen 80; \
+# Use nginx templates to dynamically listen on the PORT assigned by Railway
+RUN mkdir -p /etc/nginx/templates && echo 'server { \
+    listen ${PORT}; \
     location / { \
         root   /usr/share/nginx/html; \
         index  index.html index.htm; \
         try_files $uri $uri/ /index.html; \
     } \
-}' > /etc/nginx/conf.d/default.conf
+}' > /etc/nginx/templates/default.conf.template
 
-EXPOSE 80
+# Provide a default port definition
+ENV PORT=80
 
 CMD ["nginx", "-g", "daemon off;"]
