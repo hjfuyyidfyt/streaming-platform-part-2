@@ -30,11 +30,10 @@ RUN npm install -g serve
 # Copy the build output from the builder stage
 COPY --from=builder /app/dist ./dist
 
-# Provide a default port definition (Railway will override this)
-ENV PORT=8000
+# EXPOSE must be a static number, not a variable. 
+# We explicitly expose 8080 and Railway's proxy will detect this and route web traffic here.
+ENV PORT=8080
+EXPOSE 8080
 
-# Expose the port
-EXPOSE $PORT
-
-# Run serve on the dist directory, resolving SPA routing (-s)
-CMD sh -c "serve -s dist -l tcp://0.0.0.0:${PORT}"
+# Explicitly bind serve to 0.0.0.0:8080
+CMD ["serve", "-s", "dist", "-l", "tcp://0.0.0.0:8080"]
