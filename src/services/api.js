@@ -222,8 +222,7 @@ export const api = {
         const token = localStorage.getItem('token');
         const response = await axios.post(`${API_URL}/upload/video`, formData, {
             headers: {
-                ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
-                'Content-Type': 'multipart/form-data'
+                ...(token ? { 'Authorization': `Bearer ${token}` } : {})
             },
             onUploadProgress: (progressEvent) => {
                 if (onProgress) {
