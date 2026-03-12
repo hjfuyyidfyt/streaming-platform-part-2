@@ -728,7 +728,7 @@ const Settings = () => {
                                                         }
                                                     }))}
                                                     className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg py-2.5 px-3 text-sm text-white focus:outline-none focus:border-indigo-500/50 transition-all font-mono"
-                                                    placeholder="https://www.highperformanceformat.com/.../invoke.js"
+                                                    placeholder="https://monetag-script-url-here"
                                                 />
                                             </div>
                                             <div className="bg-[#242424] p-4 rounded-xl border border-gray-700/30">
