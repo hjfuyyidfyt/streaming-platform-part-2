@@ -85,11 +85,6 @@ const VideoDetails = () => {
     }, []);
 
     const handleAdClick = () => {
-        const adsDisabled = localStorage.getItem('ads_enabled') === 'false';
-        if (!adsDisabled) {
-            const adUrl = "https://www.effectivegatecpm.com/ieyn4dw3fw?key=390a194dfdfcc7ab638a23fab9da0fa2";
-            if (adUrl && adUrl !== "#") window.open(adUrl, "_blank");
-        }
         setAdOverlayVisible(false);
         if (videoRef.current) videoRef.current.play().catch(err => console.error("Play failed", err));
     };
@@ -452,24 +447,7 @@ const VideoDetails = () => {
                         </div>
                     </div>
 
-                    {/* Ad unit above title */}
-                    {localStorage.getItem('ads_enabled') !== 'false' && (
-                        <div className="w-full px-4 lg:px-0 mt-3 mb-1 flex justify-center overflow-hidden">
-                            <div ref={(el) => {
-                                if (el && !el.dataset.adLoaded) {
-                                    el.dataset.adLoaded = 'true';
-                                    const isMobile = window.innerWidth < 468;
-                                    const adWidth = isMobile ? 320 : 468; const adHeight = isMobile ? 50 : 60;
-                                    const configScript = document.createElement('script');
-                                    configScript.text = `atOptions = {'key':'92ddfa4ed8b775183e950459a641f268','format':'iframe','height':${adHeight},'width':${adWidth},'params':{}};`;
-                                    el.appendChild(configScript);
-                                    const invokeScript = document.createElement('script');
-                                    invokeScript.src = 'https://www.highperformanceformat.com/92ddfa4ed8b775183e950459a641f268/invoke.js';
-                                    el.appendChild(invokeScript);
-                                }
-                            }} className="min-h-[50px] sm:min-h-[60px] w-full flex justify-center" />
-                        </div>
-                    )}
+                    {/* Monetag handles ads automatically via multitag script */}
 
                     {/* ─── Video Title & Controls ─── */}
                     <div className="w-full px-4 lg:px-0 mt-3 animate-fadeIn" style={{ position: 'relative', zIndex: 50 }}>
